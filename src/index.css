@@ -1,0 +1,122 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Merriweather', serif;
+}
+
+.App {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: blue;
+    background: rgb(226,240,241);
+    background: radial-gradient(circle, rgba(226,240,241,1) 0%, rgba(14,223,236,1) 100%);
+}
+
+.box_weather{
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px 1px black;
+    border-radius: 100px;
+    
+}
+
+.nav_bar{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 50px;
+}
+
+.title_app{
+    position: relative;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.but{
+    margin: 100px;
+    border: none;
+    background: #0d9aab;
+    padding: 8px;
+    color: #fff;
+}
+
+.icon{
+    margin: 0;
+    padding: 0;
+}
+
+.search_city #setCity{
+    padding: 10px;
+}
+
+.search_city #cityButton{
+    border: none;
+    padding: 10px;
+    background: #0d9aab;
+    color: #fff;
+}
+
+.temperature{
+    font-size: 50px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.temp_container{
+    display: flex;
+}
+
+@media (min-width: 0px) and (max-width:400px) {
+    .box_weather{
+        width: 100%;
+    }
+
+    .temperature{
+        font-size: 50px;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+
+    .nav_bar{
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .icon{
+        margin: 0;
+        padding: 0;
+        width: 150px;
+        height: 150px;
+    }
+}
